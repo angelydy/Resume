@@ -1,0 +1,30 @@
+@keyframes fade {
+  0% {
+    opacity: 0;
+  } 
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  80%, 100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateY(-800px);}
+  40% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes fromRight {
+  100% {
+    transform: translateY(0);
+  }
+  0% {
+    transform: translateX(800px);}
+  40% {
+    transform: translateX(25px);
+  }
+}

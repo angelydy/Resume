@@ -11,6 +11,8 @@ body {
   overflow: hidden;
   max-width: 100%;
   font-family: 'Poppins', sans-serif;
+  -webkit-animation: fade 2s;
+          animation: fade 2s;
 }
 
 body a {
@@ -92,6 +94,8 @@ body .grid .grid1 {
 
 body .grid .grid1 .infoContainer {
   margin: 10vh 15vh;
+  -webkit-animation: fromTop 2s;
+          animation: fromTop 2s;
 }
 
 body .grid .grid1 .self-info {
@@ -129,7 +133,87 @@ body .grid .grid1 .educ button {
 }
 
 body .grid .grid2 img {
-  width: 100%;
-  padding-top: 100px;
+  width: 105%;
+  padding-top: 10px;
+  -webkit-animation: fromRight 2s;
+          animation: fromRight 2s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromTop {
+  80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateY(-800px);
+            transform: translateY(-800px);
+  }
+  40% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@keyframes fromTop {
+  80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateY(-800px);
+            transform: translateY(-800px);
+  }
+  40% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@-webkit-keyframes fromRight {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  40% {
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+  }
+}
+
+@keyframes fromRight {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  0% {
+    -webkit-transform: translateX(800px);
+            transform: translateX(800px);
+  }
+  40% {
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

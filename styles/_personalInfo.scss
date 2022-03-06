@@ -9,6 +9,7 @@ body {
   overflow: hidden;
   max-width: 100%;
   font-family: 'Poppins', sans-serif;
+  animation: fade 2s;
 
   a {
     color: black;
@@ -72,6 +73,7 @@ body {
 
       .infoContainer {
         margin: 10vh 15vh;
+        animation: fromTop 2s;
       }
   
       .self-info {
@@ -109,8 +111,9 @@ body {
 
     .grid2 {
       img {
-        width: 100%;
-        padding-top: 100px;
+        width: 105%;
+        padding-top: 10px;
+        animation: fromRight 2s;
       }
     }
   }
