@@ -132,11 +132,130 @@ body .grid .grid1 .educ button {
   margin: 0 20px;
 }
 
+body .grid .grid2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body .grid .grid2 img {
   width: 105%;
   padding-top: 10px;
   -webkit-animation: fromRight 2s;
           animation: fromRight 2s;
+}
+
+.grid1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid1 .backBtn button {
+  width: 80px;
+  height: 50px;
+  background: transparent;
+  border-style: none;
+}
+
+.grid1 .backBtn button:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: .4s ease-in-out 0s;
+  transition: .4s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.grid1 .image {
+  width: 80%;
+  margin: 0 13vh;
+}
+
+.grid2 .skillsContainer {
+  width: 100%;
+  margin: 10vh 15vh;
+  position: relative;
+}
+
+.grid2 .skillsContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-animation: fromRight 1s;
+          animation: fromRight 1s;
+}
+
+.grid2 .skillsContainer .skills {
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  position: absolute;
+  left: 15vh;
+  color: white;
+}
+
+.grid2 .skillsContainer .html, .grid2 .skillsContainer .figma {
+  width: 80%;
+  background: black;
+  -webkit-animation: eighty 2.5s;
+          animation: eighty 2.5s;
+}
+
+.grid2 .skillsContainer .css {
+  width: 70%;
+  background: black;
+  -webkit-animation: seventy 2.5s;
+          animation: seventy 2.5s;
+}
+
+.grid2 .skillsContainer .sass, .grid2 .skillsContainer .python {
+  width: 50%;
+  background: black;
+  -webkit-animation: fifty 2.5s;
+          animation: fifty 2.5s;
+}
+
+.grid2 .skillsContainer .photoshop {
+  width: 30%;
+  background: black;
+  -webkit-animation: thirty 2.5s;
+          animation: thirty 2.5s;
+}
+
+.grid2 .skillsContainer .js {
+  width: 40%;
+  background: black;
+  -webkit-animation: forty 2.5s;
+          animation: forty 2.5s;
+}
+
+.grid2 .skillsContainer .btnContainer {
+  position: relative;
+}
+
+.grid2 .skillsContainer .btnContainer .educBtn {
+  font-weight: bold;
+  border-style: none;
+  background: white;
+  color: black;
+  width: 130px;
+  height: 50px;
+  position: absolute;
+  left: 470px;
+  bottom: -100px;
+}
+
+.grid2 .skillsContainer .btnContainer .educBtn:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out 0s;
+  transition: .5s ease-in-out 0s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @-webkit-keyframes fade {
@@ -158,7 +277,7 @@ body .grid .grid2 img {
 }
 
 @-webkit-keyframes fromTop {
-  80%, 100% {
+  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -166,14 +285,14 @@ body .grid .grid2 img {
     -webkit-transform: translateY(-800px);
             transform: translateY(-800px);
   }
-  40% {
+  50% {
     -webkit-transform: translateY(-25px);
             transform: translateY(-25px);
   }
 }
 
 @keyframes fromTop {
-  80%, 100% {
+  100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -181,7 +300,7 @@ body .grid .grid2 img {
     -webkit-transform: translateY(-800px);
             transform: translateY(-800px);
   }
-  40% {
+  50% {
     -webkit-transform: translateY(-25px);
             transform: translateY(-25px);
   }
@@ -196,7 +315,7 @@ body .grid .grid2 img {
     -webkit-transform: translateX(800px);
             transform: translateX(800px);
   }
-  40% {
+  50% {
     -webkit-transform: translateX(25px);
             transform: translateX(25px);
   }
@@ -211,9 +330,99 @@ body .grid .grid2 img {
     -webkit-transform: translateX(800px);
             transform: translateX(800px);
   }
-  40% {
+  50% {
     -webkit-transform: translateX(25px);
             transform: translateX(25px);
+  }
+}
+
+@-webkit-keyframes eighty {
+  100% {
+    width: 80%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes eighty {
+  100% {
+    width: 80%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes fifty {
+  100% {
+    width: 50%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes fifty {
+  100% {
+    width: 50%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes seventy {
+  100% {
+    width: 70%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes seventy {
+  100% {
+    width: 70%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes forty {
+  100% {
+    width: 40%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes forty {
+  100% {
+    width: 40%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes thirty {
+  100% {
+    width: 30%;
+  }
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes thirty {
+  100% {
+    width: 30%;
+  }
+  0% {
+    width: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
