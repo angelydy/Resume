@@ -1,3 +1,3 @@
 # Personal Portfolio/Resume
 [View Live Version Here]()
-![SamplePhoto](prev.png)
+![SamplePhoto](/assets/prev.png)
