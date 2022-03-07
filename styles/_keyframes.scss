@@ -20,12 +20,23 @@
 
 @keyframes fromRight {
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   0% {
     transform: translateX(800px);}
   50% {
     transform: translateX(25px);
+  }
+}
+
+@keyframes fromLeft {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(-800px);}
+  50% {
+    transform: translateX(-25px);
   }
 }
 

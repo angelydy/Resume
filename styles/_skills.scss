@@ -85,6 +85,8 @@
         position: absolute;
         left: 470px;
         bottom: -100px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
     
         &:hover {
           background: black;
@@ -92,6 +94,7 @@
           cursor: pointer;
           transition: .5s ease-in-out 0s;
           transform: scale(0.9);
+          right: -10px;
         }
       }
     }

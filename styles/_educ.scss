@@ -1,0 +1,76 @@
+.educContainer {
+  position: relative;
+
+  .backBtn button {
+    width: 80px;
+    height: 50px;
+    background: transparent;
+    border-style: none;
+
+    &:hover {
+      transform: scale(0.8);
+      transition: .4s ease-in-out 0s;
+      cursor: pointer;
+    }
+  }
+
+
+  .skillsBtn {
+    font-weight: bold;
+    border-style: none;
+    background: white;
+    color: black;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+
+    &:hover {
+      background: black;
+      color: white;
+      cursor: pointer;
+      transition: .5s ease-in-out 0s;
+      transform: scale(0.9);
+      right: -10px;
+    }
+  }
+}
+
+.grid {
+  .containerleft {
+    animation: fromLeft 1s;
+    margin: 0px 20px;
+    position: relative;
+    left: 34%;
+    margin: 50px 0px;
+  
+    .content {
+      background: #ffc341;
+      border-bottom-left-radius: 80px;
+      border-top-left-radius: 80px;
+      width: 400px;
+      padding: 10px 50px;
+    }
+  }
+  
+  .containerright {
+    right: -20px;
+    animation: fromRight 1s;
+    position: relative;
+    margin: 120px 0px;
+  
+    .content {
+      background-color: black;
+      color: white;
+      z-index: 1;
+      border-bottom-right-radius: 80px;
+      border-top-right-radius: 80px;
+      width: 400px;
+      padding: 10px 50px;
+    }
+  }
+  
+}
