@@ -145,7 +145,10 @@ body .grid .grid2 {
 }
 
 body .grid .grid2 img {
-  width: 105%;
+  position: fixed;
+  width: 50%;
+  bottom: 0;
+  right: 0;
   padding-top: 10px;
   -webkit-animation: fromRight 2s;
           animation: fromRight 2s;
