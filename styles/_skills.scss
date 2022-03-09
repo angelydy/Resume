@@ -71,32 +71,28 @@
       background: black;
       animation: forty 2.5s;
     }
+  }
+}
 
-    .btnContainer {
-      position: relative;
-  
-      .educBtn {
-        font-weight: bold;
-        border-style: none;
-        background: white;
-        color: black;
-        width: 130px;
-        height: 50px;
-        position: absolute;
-        left: 470px;
-        bottom: -100px;
-        border-bottom-left-radius: 50px;
-        border-top-left-radius: 50px;
-    
-        &:hover {
-          background: black;
-          color: white;
-          cursor: pointer;
-          transition: .5s ease-in-out 0s;
-          transform: scale(0.9);
-          right: -10px;
-        }
-      }
-    }
+.educBtn {
+  font-weight: bold;
+  border-style: none;
+  background: white;
+  color: black;
+  width: 130px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+
+  &:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease-in-out 0s;
+    transform: scale(0.9);
+    right: -10px;
   }
 }

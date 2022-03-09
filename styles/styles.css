@@ -37,7 +37,7 @@ body .navbar .logo {
 
 body .navbar .behance {
   position: absolute;
-  left: 75vh;
+  left: 45%;
 }
 
 body .navbar .behance:hover {
@@ -49,7 +49,7 @@ body .navbar .behance:hover {
 
 body .navbar .github {
   position: absolute;
-  left: 93vh;
+  left: 53%;
 }
 
 body .navbar .github:hover {
@@ -241,11 +241,7 @@ body .grid .grid2 img {
           animation: forty 2.5s;
 }
 
-.grid2 .skillsContainer .btnContainer {
-  position: relative;
-}
-
-.grid2 .skillsContainer .btnContainer .educBtn {
+.educBtn {
   font-weight: bold;
   border-style: none;
   background: white;
@@ -253,13 +249,13 @@ body .grid .grid2 img {
   width: 130px;
   height: 50px;
   position: absolute;
-  left: 470px;
-  bottom: -100px;
+  right: 0;
+  bottom: 50px;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
 }
 
-.grid2 .skillsContainer .btnContainer .educBtn:hover {
+.educBtn:hover {
   background: black;
   color: white;
   cursor: pointer;
