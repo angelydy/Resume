@@ -24,11 +24,9 @@ body {
 
     .logo {
       height: 40px;
-    } 
+    }
 
     .behance {
-      position: absolute;
-      left:45%;
 
       &:hover {
         transition: .5s ease-in-out 0s;
@@ -36,8 +34,7 @@ body {
       }
     }
     .github {
-      position: absolute;
-      left:53%;
+
 
       &:hover {
         transition: .5s ease-in-out 0s;
@@ -106,9 +103,9 @@ body {
         }
       }
 
-      .educ button {
+      .educ01 button {
         width: 110px;
-        margin: 0 20px;
+        margin: 0 25px;
       }
     }
 
@@ -117,7 +114,7 @@ body {
       
       img {
         position: fixed;
-        width: 50%;
+        width: 85vh;
         bottom: 0;
         right: 0;
         padding-top: 10px;

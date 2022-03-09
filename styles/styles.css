@@ -35,21 +35,11 @@ body .navbar .logo {
   height: 40px;
 }
 
-body .navbar .behance {
-  position: absolute;
-  left: 45%;
-}
-
 body .navbar .behance:hover {
   -webkit-transition: .5s ease-in-out 0s;
   transition: .5s ease-in-out 0s;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-}
-
-body .navbar .github {
-  position: absolute;
-  left: 53%;
 }
 
 body .navbar .github:hover {
@@ -133,9 +123,9 @@ body .grid .grid1 .buttons button:hover {
           transform: scale(0.9);
 }
 
-body .grid .grid1 .educ button {
+body .grid .grid1 .educ01 button {
   width: 110px;
-  margin: 0 20px;
+  margin: 0 25px;
 }
 
 body .grid .grid2 {
@@ -146,7 +136,7 @@ body .grid .grid2 {
 
 body .grid .grid2 img {
   position: fixed;
-  width: 50%;
+  width: 85vh;
   bottom: 0;
   right: 0;
   padding-top: 10px;
