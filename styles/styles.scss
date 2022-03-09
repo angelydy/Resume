@@ -3,3 +3,52 @@
 @import 'skills';
 @import 'educ';
 @import 'keyframes';
+
+@media screen and (min-width: 320px) and (max-width: 1280px)  {
+  body {
+    overflow: visible;
+    max-width: 100%;
+
+    .self-info {
+      text-align: center;
+    }
+
+    .buttons{
+      display: flex;
+    }
+
+    .educBtn {
+      position: fixed;
+      right: 0;
+      bottom: 30px;
+      z-index: 1;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+
+      .grid2 {
+        background-color: #ffc341;
+        img {
+          position: relative;
+          max-width: 100%;
+        }
+      }
+    }
+
+    #educgrid {
+      display: flex;
+      flex-direction: column;
+
+      .containerleft {
+        left: 0;
+      }
+      .containerright {
+        left: 0;
+        padding: 0;
+        margin: 50px 0;
+      }
+    }
+  }
+}

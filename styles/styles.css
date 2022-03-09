@@ -305,7 +305,7 @@ body .grid .grid2 img {
           animation: fromLeft 1s;
   margin: 0px 20px;
   position: relative;
-  left: 34%;
+  left: 40%;
   margin: 50px 0px;
 }
 
@@ -318,7 +318,7 @@ body .grid .grid2 img {
 }
 
 .grid .containerright {
-  right: -20px;
+  right: 0;
   -webkit-animation: fromRight 1s;
           animation: fromRight 1s;
   position: relative;
@@ -530,6 +530,60 @@ body .grid .grid2 img {
   }
   0% {
     width: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1280px) {
+  body {
+    overflow: visible;
+    max-width: 100%;
+  }
+  body .self-info {
+    text-align: center;
+  }
+  body .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .educBtn {
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    z-index: 1;
+  }
+  body .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .grid .grid2 {
+    background-color: #ffc341;
+  }
+  body .grid .grid2 img {
+    position: relative;
+    max-width: 100%;
+  }
+  body #educgrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #educgrid .containerleft {
+    left: 0;
+  }
+  body #educgrid .containerright {
+    left: 0;
+    padding: 0;
+    margin: 50px 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
