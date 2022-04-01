@@ -6,10 +6,26 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
   max-width: 100%;
   font-family: 'Poppins', sans-serif;
   animation: fade 2s;
+
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255); 
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
   a {
     color: black;
@@ -19,7 +35,7 @@ body {
   .navbar {
     display: flex; 
     justify-content: space-between;
-    padding: 20px;
+    padding: 2rem;
     position: relative;
 
     .logo {
@@ -35,7 +51,6 @@ body {
     }
     .github {
 
-
       &:hover {
         transition: .5s ease-in-out 0s;
         transform: scale(0.9);
@@ -48,8 +63,8 @@ body {
       background: black;
       border-radius: 50px;
       color: white;
-      width: 90px;
-      height: 40px;
+      width: 5rem;
+      height: 2.5rem;
 
       &:hover {
         background: white;
@@ -70,15 +85,15 @@ body {
       display: flex;
 
       .infoContainer {
-        margin: 10vh 15vh;
+        margin: 5rem 7rem;
         animation: fromTop 2s;
       }
   
       .self-info {
-        font-size: 17px;
+        font-size: 2ch;
 
         .name {
-          font-size: 80px;
+          font-size: 5rem;
           font-weight: 900;
         }
       }
@@ -87,10 +102,10 @@ body {
         font-weight: bold;
        border-style: none;
        background: #ffc341;
-       border-radius: 50px;
+       border-radius: 3rem;
        color: black;
-       width: 90px;
-       height: 50px;
+       width: 5rem;
+       height: 3rem;
        box-shadow: 0 10px 30px#ffc341;
 
        &:hover {
@@ -104,8 +119,8 @@ body {
       }
 
       .educ01 button {
-        width: 110px;
-        margin: 0 25px;
+        width: 7rem;
+        margin: 0 2rem;
       }
     }
 
@@ -117,7 +132,6 @@ body {
         width: 85vh;
         bottom: 0;
         right: 0;
-        padding-top: 10px;
         animation: fromRight 2s;
       }
     }

@@ -8,11 +8,27 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
   max-width: 100%;
   font-family: 'Poppins', sans-serif;
   -webkit-animation: fade 2s;
           animation: fade 2s;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 body a {
@@ -27,7 +43,7 @@ body .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 2rem;
   position: relative;
 }
 
@@ -55,8 +71,8 @@ body .navbar .emailBtn {
   background: black;
   border-radius: 50px;
   color: white;
-  width: 90px;
-  height: 40px;
+  width: 5rem;
+  height: 2.5rem;
 }
 
 body .navbar .emailBtn:hover {
@@ -85,17 +101,17 @@ body .grid .grid1 {
 }
 
 body .grid .grid1 .infoContainer {
-  margin: 10vh 15vh;
+  margin: 5rem 7rem;
   -webkit-animation: fromTop 2s;
           animation: fromTop 2s;
 }
 
 body .grid .grid1 .self-info {
-  font-size: 17px;
+  font-size: 2ch;
 }
 
 body .grid .grid1 .self-info .name {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 900;
 }
 
@@ -103,10 +119,10 @@ body .grid .grid1 .buttons button {
   font-weight: bold;
   border-style: none;
   background: #ffc341;
-  border-radius: 50px;
+  border-radius: 3rem;
   color: black;
-  width: 90px;
-  height: 50px;
+  width: 5rem;
+  height: 3rem;
   -webkit-box-shadow: 0 10px 30px #ffc341;
           box-shadow: 0 10px 30px #ffc341;
 }
@@ -124,8 +140,8 @@ body .grid .grid1 .buttons button:hover {
 }
 
 body .grid .grid1 .educ01 button {
-  width: 110px;
-  margin: 0 25px;
+  width: 7rem;
+  margin: 0 2rem;
 }
 
 body .grid .grid2 {
@@ -139,7 +155,6 @@ body .grid .grid2 img {
   width: 85vh;
   bottom: 0;
   right: 0;
-  padding-top: 10px;
   -webkit-animation: fromRight 2s;
           animation: fromRight 2s;
 }
@@ -152,8 +167,8 @@ body .grid .grid2 img {
 }
 
 .grid1 .backBtn button {
-  width: 80px;
-  height: 50px;
+  width: 5rem;
+  height: 3rem;
   background: transparent;
   border-style: none;
 }
@@ -188,9 +203,9 @@ body .grid .grid2 img {
 
 .grid2 .skillsContainer .skills {
   text-align: right;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
   position: absolute;
   left: 15vh;
   color: white;
@@ -236,13 +251,13 @@ body .grid .grid2 img {
   border-style: none;
   background: white;
   color: black;
-  width: 130px;
-  height: 50px;
+  width: 8rem;
+  height: 3rem;
   position: absolute;
   right: 0;
-  bottom: 50px;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
+  bottom: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 
 .educBtn:hover {
@@ -251,9 +266,6 @@ body .grid .grid2 img {
   cursor: pointer;
   -webkit-transition: .5s ease-in-out 0s;
   transition: .5s ease-in-out 0s;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  right: -10px;
 }
 
 .educContainer {
@@ -261,8 +273,8 @@ body .grid .grid2 img {
 }
 
 .educContainer .backBtn button {
-  width: 80px;
-  height: 50px;
+  width: 5rem;
+  height: 3rem;
   background: transparent;
   border-style: none;
 }
@@ -280,13 +292,13 @@ body .grid .grid2 img {
   border-style: none;
   background: white;
   color: black;
-  width: 130px;
-  height: 50px;
+  width: 8rem;
+  height: 3rem;
   position: absolute;
   right: 0;
-  bottom: 20px;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
+  bottom: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 
 .educContainer .skillsBtn:hover {
@@ -295,26 +307,22 @@ body .grid .grid2 img {
   cursor: pointer;
   -webkit-transition: .5s ease-in-out 0s;
   transition: .5s ease-in-out 0s;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  right: -10px;
 }
 
 .grid .containerleft {
   -webkit-animation: fromLeft 1s;
           animation: fromLeft 1s;
-  margin: 0px 20px;
   position: relative;
   left: 40%;
-  margin: 50px 0px;
+  margin: 3rem 0;
 }
 
 .grid .containerleft .content {
   background: #ffc341;
-  border-bottom-left-radius: 80px;
-  border-top-left-radius: 80px;
-  width: 400px;
-  padding: 10px 50px;
+  border-bottom-left-radius: 3rem;
+  border-top-left-radius: 3rem;
+  width: 25rem;
+  padding: 1rem 3rem;
 }
 
 .grid .containerright {
@@ -322,17 +330,17 @@ body .grid .grid2 img {
   -webkit-animation: fromRight 1s;
           animation: fromRight 1s;
   position: relative;
-  margin: 120px 0px;
+  margin: 7rem 1rem;
 }
 
 .grid .containerright .content {
   background-color: black;
   color: white;
   z-index: 1;
-  border-bottom-right-radius: 80px;
-  border-top-right-radius: 80px;
-  width: 400px;
-  padding: 10px 50px;
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;
+  width: 25rem;
+  padding: 1rem 3rem;
 }
 
 @-webkit-keyframes fade {
