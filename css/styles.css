@@ -761,7 +761,6 @@ textarea {
     margin: 0;
     width: 100%;
     line-height: 2rem;
-    height: auto;
     background: #ffc341;
   }
   body .contactContainer #contactGridBackBtn {
@@ -792,7 +791,7 @@ textarea {
     text-align: center;
   }
   body textarea {
-    width: auto;
+    width: 50%;
   }
   body .buttons {
     display: -webkit-box;
