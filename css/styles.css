@@ -107,7 +107,7 @@ body .grid .grid1 .infoContainer {
   -webkit-animation: fromTop 2s;
           animation: fromTop 2s;
   margin: 1rem auto 0 0;
-  padding: 5rem;
+  padding: 7rem;
 }
 
 body .grid .grid1 .self-info {
@@ -381,8 +381,8 @@ body .grid .grid2 .portait {
 }
 
 .grid .timelineContainer {
+  margin-left: 15.3rem;
   text-align: center;
-  margin-left: 24.6%;
 }
 
 .grid .containerleft {
@@ -470,9 +470,8 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   line-height: 4rem;
 }
 
@@ -864,6 +863,7 @@ textarea {
     width: 100%;
     bottom: 0;
     right: 0;
+    border-radius: 50%;
     -webkit-animation: fromRight 2s;
             animation: fromRight 2s;
   }
