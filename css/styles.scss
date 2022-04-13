@@ -18,15 +18,16 @@
 
     .contactContainer {
       margin: 0;
-      width: 100%;
+      width: auto;
       line-height: 2rem;
       height: 100%;
       position: fixed;
       background: #ffc341;
-
+      overflow: visible;
+      
       #contactGridBackBtn {
         display: block;
-        
+
         button {
         width: 2rem;
         height: 3rem;

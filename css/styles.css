@@ -759,11 +759,12 @@ textarea {
   }
   body .contactContainer {
     margin: 0;
-    width: 100%;
+    width: auto;
     line-height: 2rem;
     height: 100%;
     position: fixed;
     background: #ffc341;
+    overflow: visible;
   }
   body .contactContainer #contactGridBackBtn {
     display: block;
