@@ -1,5 +1,5 @@
 body {
-  background: url(/assets/bg.png);
+  background: url(/images/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -35,8 +35,9 @@ body {
   .navbar {
     display: flex; 
     justify-content: space-between;
-    padding: 2rem;
+    margin: 1rem 2rem;
     position: relative;
+    align-items: center;
 
     .logo {
       height: 40px;
@@ -85,8 +86,9 @@ body {
       display: flex;
 
       .infoContainer {
-        margin: 5rem 7rem;
         animation: fromTop 2s;
+        margin: 1rem auto 0 0;
+        padding: 5rem;
       }
   
       .self-info {
@@ -95,21 +97,26 @@ body {
         .name {
           font-size: 5rem;
           font-weight: 900;
+          text-align: center;
         }
       }
 
-      .buttons button {
-        font-weight: bold;
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+      
+      button {
+      font-weight: bold;
        border-style: none;
        background: #ffc341;
        border-radius: 3rem;
        color: black;
-       width: 5rem;
+       width: 7rem;
        height: 3rem;
-       box-shadow: 0 10px 30px#ffc341;
+       box-shadow: 0 10px 30px #ffc341;
 
        &:hover {
-        box-shadow: 0 5px 30px#000000;
+        box-shadow: 0 5px 30px #000000;
         background: black;
         color: white;
         cursor: pointer;
@@ -117,19 +124,15 @@ body {
         transform: scale(0.9);
         }
       }
-
-      .educ01 button {
-        width: 7rem;
-        margin: 0 2rem;
-      }
     }
+  }
 
     .grid2 {
       display: flex;
       
-      img {
+      .portait {
         position: fixed;
-        width: 85vh;
+        width: 50%;
         bottom: 0;
         right: 0;
         animation: fromRight 2s;

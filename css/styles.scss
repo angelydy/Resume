@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+@import 'personalInfo';
+@import 'skills';
+@import 'educ';
+@import 'fjob';
+@import 'contact';
+@import 'keyframes';
+
+@media screen and (max-width: 1200px)  {
+  body {
+    width: 100%;
+    background: white;
+
+    .navbar {
+      padding: 1rem;
+      margin: 0;
+    }
+
+    .contactContainer {
+      margin: 0;
+      width: 100%;
+      padding: 0.3em;
+      line-height: 2rem;
+
+      p {
+        text-align: center;
+      }
+    }
+
+    .fname-lname, .email-phoneNo{
+      font-size: 1.2rem;
+      line-height: 3rem;
+    }
+
+    .message {
+      text-align: center;
+    }
+
+    textarea {
+      width: 20rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .emailBtn {
+      font-weight: bold;
+      border-style: none;
+      background: black;
+      border-radius: 50px;
+      color: white;
+      width: 5rem;
+      height: 2.5rem;
+
+      &:hover {
+        background: #ffc341;
+        color: black;
+        cursor: pointer;
+        transition: .5s ease-in-out 0s;
+        transform: scale(0.9);
+        box-shadow: 0 5px 30px #ffffff;
+      }
+    }
+
+    .self-info {
+      text-align: center;
+    }
+
+    .buttons{
+      flex-direction: column;
+      align-items: center;
+      a {
+        margin: 1rem 0;
+      }
+    }
+
+    .educBtn {
+      position: fixed;
+      right: 0;
+      bottom: 30px;
+      z-index: 1;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+
+      .schoolInfo {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .timelineContainer {
+        text-align: center;
+        margin: 0;
+      }
+
+      .grid1 {
+        display: flex;
+  
+        .infoContainer {
+          animation: fromTop 2s;
+          margin: auto;
+          padding: 1rem;
+        }
+      }
+
+      .grid2 {
+        background-color: #ffc341;
+        
+        .portait {
+          position: relative;
+          width: 100%;
+          bottom: 0;
+          right: 0;
+          animation: fromRight 2s;
+        }
+
+        .skillsContainer {
+          width: auto;
+          margin: 3rem 5rem;
+        }
+      }
+
+      .containerleft, .containerright{
+        .content {
+          width: auto;
+          padding: 1rem;
+        }
+      }
+    }
+
+    #educgrid {
+      display: flex;
+      flex-direction: column;
+
+      .containerleft {
+        left: 0;
+      }
+      .containerright {
+        left: 0;
+        padding: 0;
+        margin: 50px 0;
+      }
+    }
+
+    .image-woman {
+      display: none;
+    }
+
+    .hobbiesContainer {
+      flex-direction: column;
+    }
+  }
+}

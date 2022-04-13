@@ -1,0 +1,21 @@
+.jobPhoto {
+  padding: 2rem 0 2rem 0;
+  img {
+    width: 70%;
+    animation: fromRight 2s;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+}
+
+.fjobTitle {
+  margin: 1rem 3rem;
+}
+
+.job {
+  margin: 2rem 4rem;
+  text-align: justify;
+  line-height: 2rem;
+}

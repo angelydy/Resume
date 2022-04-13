@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
 body {
-  background: url(/assets/bg.png);
+  background: url(/images/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -43,8 +43,11 @@ body .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
+  margin: 1rem 2rem;
   position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .navbar .logo {
@@ -101,9 +104,10 @@ body .grid .grid1 {
 }
 
 body .grid .grid1 .infoContainer {
-  margin: 5rem 7rem;
   -webkit-animation: fromTop 2s;
           animation: fromTop 2s;
+  margin: 1rem auto 0 0;
+  padding: 5rem;
 }
 
 body .grid .grid1 .self-info {
@@ -113,6 +117,16 @@ body .grid .grid1 .self-info {
 body .grid .grid1 .self-info .name {
   font-size: 5rem;
   font-weight: 900;
+  text-align: center;
+}
+
+body .grid .grid1 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .grid .grid1 .buttons button {
@@ -121,7 +135,7 @@ body .grid .grid1 .buttons button {
   background: #ffc341;
   border-radius: 3rem;
   color: black;
-  width: 5rem;
+  width: 7rem;
   height: 3rem;
   -webkit-box-shadow: 0 10px 30px #ffc341;
           box-shadow: 0 10px 30px #ffc341;
@@ -139,20 +153,15 @@ body .grid .grid1 .buttons button:hover {
           transform: scale(0.9);
 }
 
-body .grid .grid1 .educ01 button {
-  width: 7rem;
-  margin: 0 2rem;
-}
-
 body .grid .grid2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .grid .grid2 img {
+body .grid .grid2 .portait {
   position: fixed;
-  width: 85vh;
+  width: 50%;
   bottom: 0;
   right: 0;
   -webkit-animation: fromRight 2s;
@@ -181,9 +190,16 @@ body .grid .grid2 img {
   cursor: pointer;
 }
 
-.grid1 .image {
+.grid1 .image-woman {
   width: 80%;
   margin: 0 13vh;
+}
+
+.grid2 .skill {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 .grid2 .skillsContainer {
@@ -249,11 +265,12 @@ body .grid .grid2 img {
 .educBtn {
   font-weight: bold;
   border-style: none;
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   width: 8rem;
   height: 3rem;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
   right: 0;
   bottom: 2rem;
   border-bottom-left-radius: 2rem;
@@ -261,11 +278,59 @@ body .grid .grid2 img {
 }
 
 .educBtn:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   cursor: pointer;
   -webkit-transition: .5s ease-in-out 0s;
   transition: .5s ease-in-out 0s;
+}
+
+.section-two {
+  background-color: white;
+  padding: 1rem;
+}
+
+.section-two .hobbies {
+  padding-bottom: 3rem;
+}
+
+.section-two h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.section-two .hobbiesContainer {
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-two .hobby:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.section-two .hobbiesDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-two .hobbiesDesc p {
+  text-align: center;
+  width: 70%;
 }
 
 .educContainer {
@@ -309,12 +374,21 @@ body .grid .grid2 img {
   transition: .5s ease-in-out 0s;
 }
 
+.grid .schoolInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid .timelineContainer {
+  text-align: center;
+  margin-left: 24.6%;
+}
+
 .grid .containerleft {
   -webkit-animation: fromLeft 1s;
           animation: fromLeft 1s;
-  position: relative;
-  left: 40%;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .grid .containerleft .content {
@@ -326,11 +400,9 @@ body .grid .grid2 img {
 }
 
 .grid .containerright {
-  right: 0;
   -webkit-animation: fromRight 1s;
           animation: fromRight 1s;
-  position: relative;
-  margin: 7rem 1rem;
+  margin: 2rem 0;
 }
 
 .grid .containerright .content {
@@ -341,6 +413,139 @@ body .grid .grid2 img {
   border-top-right-radius: 3rem;
   width: 25rem;
   padding: 1rem 3rem;
+}
+
+.jobPhoto {
+  padding: 2rem 0 2rem 0;
+}
+
+.jobPhoto img {
+  width: 70%;
+  -webkit-animation: fromRight 2s;
+          animation: fromRight 2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.fjobTitle {
+  margin: 1rem 3rem;
+}
+
+.job {
+  margin: 2rem 4rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.grid1-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1.5rem 4rem;
+}
+
+.contact-image {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 3rem;
+}
+
+.fname-lname, .email-phoneNo {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 4rem;
+}
+
+input {
+  background: none;
+  border-style: none;
+  border-bottom: black 2px solid;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: black;
+}
+
+input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: black;
+}
+
+input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: black;
+}
+
+input::placeholder {
+  font-size: 1rem;
+  color: black;
+}
+
+form {
+  line-height: 3rem;
+}
+
+.contactContainer {
+  margin: 1rem auto;
+}
+
+.contactContainer p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid black;
+  width: 25rem;
+  background: none;
+  text-align: center;
+}
+
+.formControls {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.formControls .submitBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formControls input {
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 @-webkit-keyframes fade {
@@ -541,18 +746,76 @@ body .grid .grid2 img {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
   body {
-    overflow: visible;
-    max-width: 100%;
+    width: 100%;
+    background: white;
   }
-  body .self-info {
+  body .navbar {
+    padding: 1rem;
+    margin: 0;
+  }
+  body .contactContainer {
+    margin: 0;
+    width: 100%;
+    padding: 0.3em;
+    line-height: 2rem;
+  }
+  body .contactContainer p {
     text-align: center;
+  }
+  body .fname-lname, body .email-phoneNo {
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+  body .message {
+    text-align: center;
+  }
+  body textarea {
+    width: 20rem;
   }
   body .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  body .emailBtn {
+    font-weight: bold;
+    border-style: none;
+    background: black;
+    border-radius: 50px;
+    color: white;
+    width: 5rem;
+    height: 2.5rem;
+  }
+  body .emailBtn:hover {
+    background: #ffc341;
+    color: black;
+    cursor: pointer;
+    -webkit-transition: .5s ease-in-out 0s;
+    transition: .5s ease-in-out 0s;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-box-shadow: 0 5px 30px #ffffff;
+            box-shadow: 0 5px 30px #ffffff;
+  }
+  body .self-info {
+    text-align: center;
+  }
+  body .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .buttons a {
+    margin: 1rem 0;
   }
   body .educBtn {
     position: fixed;
@@ -569,12 +832,48 @@ body .grid .grid2 img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  body .grid .schoolInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .grid .timelineContainer {
+    text-align: center;
+    margin: 0;
+  }
+  body .grid .grid1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .grid .grid1 .infoContainer {
+    -webkit-animation: fromTop 2s;
+            animation: fromTop 2s;
+    margin: auto;
+    padding: 1rem;
+  }
   body .grid .grid2 {
     background-color: #ffc341;
   }
-  body .grid .grid2 img {
+  body .grid .grid2 .portait {
     position: relative;
-    max-width: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    -webkit-animation: fromRight 2s;
+            animation: fromRight 2s;
+  }
+  body .grid .grid2 .skillsContainer {
+    width: auto;
+    margin: 3rem 5rem;
+  }
+  body .grid .containerleft .content, body .grid .containerright .content {
+    width: auto;
+    padding: 1rem;
   }
   body #educgrid {
     display: -webkit-box;
@@ -592,6 +891,15 @@ body .grid .grid2 img {
     left: 0;
     padding: 0;
     margin: 50px 0;
+  }
+  body .image-woman {
+    display: none;
+  }
+  body .hobbiesContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */

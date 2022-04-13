@@ -38,11 +38,18 @@
 }
 
 .grid {  
+  .schoolInfo {
+    display: flex;
+  }
+
+  .timelineContainer {
+    text-align: center;
+    margin-left: 24.6%;
+  }
+
   .containerleft {
     animation: fromLeft 1s;
-    position: relative;
-    left: 40%;
-    margin: 3rem 0;
+    margin: 2rem 0;
   
     .content {
       background: #ffc341;
@@ -54,10 +61,8 @@
   }
   
   .containerright {
-    right: 0;
     animation: fromRight 1s;
-    position: relative;
-    margin: 7rem 1rem;
+    margin: 2rem 0;
   
     .content {
       background-color: black;

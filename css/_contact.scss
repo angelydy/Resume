@@ -1,0 +1,81 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.grid1-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1.5rem 4rem;
+}
+
+.contact-image {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 3rem;
+}
+
+.fname-lname, .email-phoneNo{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 4rem;
+}
+
+input {
+  background: none;
+  border-style: none;
+  border-bottom: black 2px solid;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    font-size: 1rem;
+    color: black;
+  }
+}
+
+form {
+  line-height: 3rem;
+}
+
+.contactContainer {
+  margin: 1rem auto;
+
+  p {
+    font-size:2rem;
+    font-weight: 600;
+  }
+}
+
+textarea {
+  resize: none;
+  border: 2px solid black;
+  width: 25rem;
+  background: none;
+  text-align: center;
+}
+
+
+.formControls {  
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+
+  .submitBtn {
+    display: flex;
+  }
+
+  input {
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
