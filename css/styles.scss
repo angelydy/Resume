@@ -19,8 +19,27 @@
     .contactContainer {
       margin: 0;
       width: 100%;
-      padding: 0.3em;
       line-height: 2rem;
+      height: 100%;
+      position: fixed;
+      background: #ffc341;
+
+      #contactGridBackBtn {
+        display: block;
+        
+        button {
+        width: 2rem;
+        height: 3rem;
+        background: transparent;
+        border-style: none;
+    
+        &:hover {
+          transform: scale(0.8);
+          transition: .4s ease-in-out 0s;
+          cursor: pointer;
+        }
+      }
+    }
 
       p {
         text-align: center;
@@ -30,6 +49,7 @@
     .fname-lname, .email-phoneNo{
       font-size: 1.2rem;
       line-height: 3rem;
+      width: auto;
     }
 
     .message {
@@ -37,7 +57,7 @@
     }
 
     textarea {
-      width: 20rem;
+      width: auto;
     }
 
     .buttons {
@@ -86,6 +106,10 @@
     .grid {
       display: flex;
       flex-direction: column;
+
+      #contactGridOne {
+        display: none;
+      }
 
       .schoolInfo {
         display: flex;

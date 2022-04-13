@@ -512,6 +512,10 @@ form {
   margin: 1rem auto;
 }
 
+.contactContainer #contactGridBackBtn {
+  display: none;
+}
+
 .contactContainer p {
   font-size: 2rem;
   font-weight: 600;
@@ -756,8 +760,26 @@ textarea {
   body .contactContainer {
     margin: 0;
     width: 100%;
-    padding: 0.3em;
     line-height: 2rem;
+    height: 100%;
+    position: fixed;
+    background: #ffc341;
+  }
+  body .contactContainer #contactGridBackBtn {
+    display: block;
+  }
+  body .contactContainer #contactGridBackBtn button {
+    width: 2rem;
+    height: 3rem;
+    background: transparent;
+    border-style: none;
+  }
+  body .contactContainer #contactGridBackBtn button:hover {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    -webkit-transition: .4s ease-in-out 0s;
+    transition: .4s ease-in-out 0s;
+    cursor: pointer;
   }
   body .contactContainer p {
     text-align: center;
@@ -765,12 +787,13 @@ textarea {
   body .fname-lname, body .email-phoneNo {
     font-size: 1.2rem;
     line-height: 3rem;
+    width: auto;
   }
   body .message {
     text-align: center;
   }
   body textarea {
-    width: 20rem;
+    width: auto;
   }
   body .buttons {
     display: -webkit-box;
@@ -829,6 +852,9 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body .grid #contactGridOne {
+    display: none;
   }
   body .grid .schoolInfo {
     display: -webkit-box;

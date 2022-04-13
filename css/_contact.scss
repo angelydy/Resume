@@ -49,6 +49,10 @@ form {
 .contactContainer {
   margin: 1rem auto;
 
+  #contactGridBackBtn {
+    display: none;
+  }
+
   p {
     font-size:2rem;
     font-weight: 600;
